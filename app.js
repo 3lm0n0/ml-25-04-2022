@@ -15,7 +15,7 @@ const htpptHome = '/home'
 const homeHtml = 'home.html'
 
 // Define the static file path
-app.use(express.static(__dirname +'/public'));
+app.use(express.static(__dirname +'/public/'));
 
 app.get(hhtpRaiz, (req, res) => {
     res.sendFile(path.join(views, homeHtml))
