@@ -20,16 +20,20 @@ express
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-Instalar node modules en el proyecto
+Instalar 'node_modules' en el proyecto
+
+_source: https://expressjs.com/es/starter/installing.html_
 
 ```
 npm install express --save
 ```
 
-_Y repite_
+Instalar 'nodemon'
+
+_source: https://www.npmjs.com/package/nodemon_
 
 ```
-hasta finalizar
+npm install --save-dev nodemon
 ```
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
@@ -44,6 +48,5 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
 * etc.
 
