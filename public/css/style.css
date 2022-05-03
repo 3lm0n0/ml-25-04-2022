@@ -5,6 +5,20 @@ body {
     height:100%;
 }
 
+main {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: none;
+}
+
+article {
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
 h2 {
     font-size: 24px;
 }
@@ -21,7 +35,9 @@ i {
     font-size: 2em;
     margin-bottom: 10px;
 }
-
+header {
+    background-color: #EAC926;
+}
 
 .border-radius-15 {
     border-radius: 15%;
@@ -39,15 +55,42 @@ i {
     text-align: center;
 }
 
-
-header {
-    background-color: #EAC926;
+.img {
+    border-top: 1px solid #ebebeb;
+}
+div.img img {
+    width: 100%;
+}
+.description {
+    display: none;
 }
 
+/* TABLET */
+@media (min-width: 361px) {
+    nav {
+        display: block;
+    }
 
+    article
+    {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+    
+    .description {
+        display:block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    
+}
 
-
-
+/* DESKTOP */
+@media (min-width: 769px) {
+    main {
+        background-color: salmon;
+    }
+}
 
 
 
