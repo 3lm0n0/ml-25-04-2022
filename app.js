@@ -11,8 +11,10 @@ const public = path.join(__dirname, 'public/')
 // hhtp routes
 const hhtpRaiz = '/'
 const htpptHome = '/home'
+const htpptFlexBox = '/flexbox'
 // html
 const homeHtml = 'home.html'
+const flexBoxHtml = 'flexbox.html'
 
 // Define the static file path
 app.use(express.static(__dirname +'/public/'));
@@ -23,6 +25,10 @@ app.get(hhtpRaiz, (req, res) => {
 
 app.get(htpptHome, (req, res) => {
     res.sendFile(path.join(views, homeHtml))
+})
+
+app.get(htpptFlexBox, (req, res) => {
+    res.sendFile(path.join(views, flexBoxHtml))
 })
 
 app.listen(port, () => {

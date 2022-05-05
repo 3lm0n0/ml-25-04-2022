@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@100&display=swap');
 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Raleway', sans-serif;
     height:100%;
@@ -14,9 +21,16 @@ nav {
     display: none;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 article {
     margin-bottom: 10px;
     padding: 15px;
+
 }
 
 h2 {
@@ -39,6 +53,16 @@ header {
     background-color: #EAC926;
 }
 
+/* HEADER */
+/* logo & search bar */
+.container-logo-search-bar {
+  display: flex;
+}
+.container-logo-search-bar div {
+  width: 50%;
+}
+
+
 .border-radius-15 {
     border-radius: 15%;
 }
@@ -50,6 +74,9 @@ header {
 }
 .color-white {
     color: #FFFFFF;
+}
+.color-green {
+  color: #00a650;
 }
 .burger-menu {
     text-align: center;
@@ -65,33 +92,81 @@ div.img img {
     display: none;
 }
 
+.container-flex-box {
+  display: flex;
+}
+.flex-grow-30 {
+  flex-grow: 0.3;
+}
+.flex-grow-50 {
+  flex-grow: 0.5;
+}
+.flex-grow-70 {
+  flex-grow: 0.7;
+}
+
+.flex-grow-1 {
+  flex-grow: 1%;
+}
+.flex-grow-2 {
+  display: none;
+}
+.flex-grow-3 {
+  display: none;
+}
+.flex-grow-4 {
+  display: none;
+}
+
+.container-truck {
+  display: flex;
+  justify-content: flex-end;
+}
+.container-truck i {
+  border-radius: 100%;
+  padding: 10px;
+  border: solid;
+  border-width: thin;
+}
+
 /* TABLET */
 @media (min-width: 361px) {
     nav {
         display: block;
     }
 
-    article
-    {
+    section {
+        flex-wrap: nowrap ;
+    }
+    article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } 
-    
+    }
+
     .description {
-        display:block;
+        display: block;
     }
     .burger-menu {
         display: none;
     }
-    
+    .flex-grow-1 {
+      margin-right: 15px;
+    }
+    .flex-grow-2 {
+      display: block;
+    }
+
 }
 
 /* DESKTOP */
 @media (min-width: 769px) {
-    main {
-        background-color: salmon;
-    }
+  .flex-grow-2 {
+    margin-right: 15px;
+  }
+  .flex-grow-3 {
+    display: block;
+    margin-right: 15px;
+  }
+  .flex-grow-4 {
+    display: block;
+  }
 }
-
-
-
-

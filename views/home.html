@@ -10,8 +10,10 @@
 <body>
     <!-- poner nuestro h1 -->
     <header>
-        <div><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
-        <h4>Lugar para poner la barra de búsqueda</h4>
+        <div class="container-logo-search-bar">
+          <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
+          <div class="flex-grow-50">Lugar para poner la barra de búsqueda</div>
+        </div>
         <h4><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
         <nav>
             <ul>
@@ -32,34 +34,54 @@
     </header>
 
     <main>
+        <h2>Basado en tu ultima visita:</h2>
         <section class="section-1">
-            <h2>Basado en tu ultima visita:</h2>
-            <article>
+            <article class="flex-grow-1">
                 <div class="img"><img src="images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera"></div>
-                <div class="img"><h6>$6.770</h6></div>
-                <div class="img"><h5>40% OFF</h5></div>
+                <div class="container-truck">
+                    <i class="color-green fa-solid fa-truck"></i>
+                </div>
+                <div class="img container-flex-box">
+                  <h6 class="flex-grow-30">$6.770</h6>
+                  <h5 class="flex-grow-70 color-green">40% OFF</h5>
+                </div>
                 <div class="img description"><h5>Cafetera Moulinex</h5></div>
             </article>
-            <article>
+            <article class="flex-grow-2">
                 <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook"></div>
-                <div class="img"><h6>$230.000</h6></div>
-                <div class="img"><h5>20% off</h5></div>
+                <div class="container-truck">
+                    <i class="color-green fa-solid fa-truck"></i>
+                </div>
+                <div class="img container-flex-box">
+                  <h6 class="flex-grow-30">$230.000</h6>
+                  <h5 class="flex-grow-70 color-green">20% off</h5>
+                </div>
                 <div class="img description"><h5>MacBook Pro 2019</h5></div>
             </article>
-            <article>
+            <article class="flex-grow-3">
                 <div class="img"><img src="images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy"></div>
-                <div class="img"><h6>$70.500</h6></div>
-                <div class="img"><h5>10% off</h5></div>
+                <div class="container-truck">
+                    <i class="color-green fa-solid fa-truck"></i>
+                </div>
+                <div class="img container-flex-box">
+                  <h6 class="flex-grow-30">$70.500</h6>
+                  <h5 class="flex-grow-70 color-green">10% off</h5>
+                </div>
                 <div class="img description"><h5>Samsung Galaxy S10</h5></div>
             </article>
-            <article>
+            <article class="flex-grow-4">
                 <div class="img"><img src="images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv"></div>
-                <div class="img"><h6>$23.200</h6></div>
-                <div class="img"><h5>5% off</h5></div>
+                <div class="container-truck">
+                    <i class="color-green fa-solid fa-truck"></i>
+                </div>
+                <div class="img container-flex-box">
+                  <h6 class="flex-grow-30">$23.200</h6>
+                  <h5 class="flex-grow-70 color-green">5% off</h5>
+                </div>
                 <div class="img description"><h5>SmartTv Samsung 43"</h5></div>
             </article>
         </section>
-        <section class="section-2">
+        <!-- <section class="section-2">
             <h2>Ofertas:</h2>
             <article>
                 <div class="img"><img src="images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera"></div>
@@ -68,7 +90,7 @@
                 <h5>Cafetera Moulinex</h5>
             </article>
             <article>
-                <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook"></div> 
+                <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook"></div>
                 $230.000
                 20% off
                 MacBook Pro 2019
@@ -85,7 +107,7 @@
                 5% off
                 SmartTv Samsung 43"
             </article>
-        </section>
+        </section> -->
     </main>
 
     <footer>
@@ -116,7 +138,7 @@
                 <h5>© 1999-2020 MercadoLiebre S.R.L.</h5>
             </li>
         </ul>
-     
+
     </footer>
 
 </body>

@@ -1,0 +1,81 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+}
+
+section.container {
+  display: flex;
+  /* display: inline-flex; */
+  flex-wrap: wrap;
+}
+
+section.container-column {
+  flex-flow: column wrap;
+}
+section.container-flex-start {
+  justify-content: flex-start;
+}
+section.container-flex-end {
+  justify-content: flex-end;
+}
+section.container-flex-center {
+  justify-content: center;
+}
+section.container-flex-space-between {
+  justify-content: space-between;
+}
+section.container-flex-space-around {
+  justify-content: space-around;
+}
+section.container-flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+article {
+  height: 250px;
+  width: 250px;
+  margin: 5px;
+  border-radius: 100%;
+}
+.article-rectangle-vertical {
+  height: 250px;
+  width: 150px;
+  margin: 5px;
+}
+.article-rectangel-horizontal {
+  height: 150px;
+  width: 250px;
+  margin: 5px;
+}
+
+div {
+  height: 5px;
+}
+
+.background-color-gray {
+  background-color: gray;
+}
+.background-color-green {
+  background-color: green;
+}
+.background-color-yellow {
+  background-color: yellow;
+}
+.background-color-blue {
+  background-color: blue;
+}
+.background-color-red {
+  background-color: red;
+}
+.background-color-orange {
+  background-color: orange;
+}
+.background-color-purple {
+  background-color: purple;
+}
