@@ -12,7 +12,14 @@
     <header>
         <div class="container-logo-search-bar">
           <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
-          <div class="flex-grow-50">Lugar para poner la barra de búsqueda</div>
+          <div class="container-search-bar">
+            <form class="nav-search" action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" style="overflow: inherit; display: inherit;">
+              <input type="text" placeholder="Buscar productos, marcas y más…">
+              <button type="submit" class="nav-search-btn" tabindex="3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
         </div>
         <h4><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
         <nav>
