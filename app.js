@@ -9,27 +9,41 @@ const views = path.join(__dirname, 'views/')
 // public
 const public = path.join(__dirname, 'public/')
 // hhtp routes
-const hhtpRaiz = '/'
-const htpptHome = '/home'
-const htpptFlexBox = '/flexbox'
+const httpRaiz = '/'
+const httpHome = '/home'
+const httpFlexBox = '/flexbox'
+const httpRegister = '/register'
+const httpLogin = '/login'
+
 // html
 const homeHtml = 'home.html'
 const flexBoxHtml = 'flexbox.html'
+const registerHtml = 'register.html'
+const loginHtml = 'login.html'
 
 // Define the static file path
 app.use(express.static(__dirname +'/public/'));
 
-app.get(hhtpRaiz, (req, res) => {
+app.get(httpRaiz, (req, res) => {
     res.sendFile(path.join(views, homeHtml))
 })
 
-app.get(htpptHome, (req, res) => {
+app.get(httpHome, (req, res) => {
     res.sendFile(path.join(views, homeHtml))
 })
 
-app.get(htpptFlexBox, (req, res) => {
+app.get(httpFlexBox, (req, res) => {
     res.sendFile(path.join(views, flexBoxHtml))
 })
+
+app.get(httpRegister, (req, res) => {
+    res.sendFile(path.join(views, registerHtml))
+})
+
+app.get(httpLogin, (req, res) => {
+    res.sendFile(path.join(views, loginHtml))
+})
+
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
