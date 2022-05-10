@@ -6,8 +6,97 @@
     <title>Registrarme</title>
 </head>
 <body>
-    <form action="login" method="get">
-        <input type="submit" value="submit">
+    <form action="login" method="post" id="register" name="register">
+    <label for="name">
+        Nombre y apellido
+        <input type="text" name="name" id="name" placeholder="Ejm. Jose"  maxlength="10" required/>
+    </label>
+    <label for="username">
+        Nombre de usuario
+        <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Ingrese su nombre de usuario"
+        />
+    </label>
+    <label for="create_at"
+        >Fecha de nacimiento
+        <input type="date" name="create_at" id="create_at" />
+    </label>
+    <label for="address"
+        >Domicilio
+        <input
+        type="text"
+        name="address"
+        id="address"
+        placeholder="Calle 100 # 12"
+        />
+    </label>
+    <label for="">
+        Perfil
+        <input
+        type="radio"
+        name="perfil"
+        value="comprador"
+        id="perfil"
+        />Comprador
+        <input
+        type="radio"
+        name="perfil"
+        value="vendedor"
+        id="perfil"
+        />Vendedor
+    </label>
+    <label for="">
+        Catagoria
+        <input
+        type="checkbox"
+        name="category"
+        value="electro"
+        id="category"
+        />Electro
+        <input type="checkbox" name="category" value="moda" id="category" />Moda
+        <input
+        type="checkbox"
+        name="category"
+        value="hogar"
+        id="category"
+        />Hogar
+        <input
+        type="checkbox"
+        name="category"
+        value="juguetería"
+        id="category"
+        />Juguetería
+        <input type="checkbox" name="category" value="vida" id="category" />Vida
+        Sana
+    </label>
+    <label for="imguser"
+        >Foto de Usuario
+        <input type="file" name="imguser" accept="image/*" id="imguser" />
+    </label>
+    <label for="password"
+        >Contraseña
+        <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Contraseña"
+        />
+    </label>
+    <label for="passwordConf"
+        >Confirmar Contraseña
+        <input
+        type="password"
+        id="passwordConf"
+        name="passwordConf"
+        placeholder="Contraseña"
+        />
+    </label>
+    <input type="submit" value="submit" />
+    <input type="reset" form="register" >
     </form>
+
 </body>
 </html>

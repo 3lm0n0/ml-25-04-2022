@@ -14,6 +14,7 @@ const httpHome = '/home'
 const httpFlexBox = '/flexbox'
 const httpRegister = '/register'
 const httpLogin = '/login'
+const httpHomeLogin = '/homelogin'
 
 // html
 const homeHtml = 'home.html'
@@ -40,7 +41,10 @@ app.get(httpRegister, (req, res) => {
     res.sendFile(path.join(views, registerHtml))
 })
 
-app.get(httpLogin, (req, res) => {
+app.get(httpHomeLogin, (req, res) => {
+    res.sendFile(path.join(views, loginHtml))
+})
+app.post(httpLogin, (req, res) => {
     res.sendFile(path.join(views, loginHtml))
 })
 
