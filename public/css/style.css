@@ -70,7 +70,6 @@ header {
   align-items: center;
 }
 .container-search-bar form {
-
   display: flex;
   justify-content:space-between;
 }
@@ -110,7 +109,10 @@ div.img img {
 }
 .description {
     display: none;
+    transition: transform 5s;
+
 }
+
 
 .container-flex-box {
   display: flex;
@@ -147,6 +149,28 @@ div.img img {
   padding: 10px;
   border: solid;
   border-width: thin;
+}
+
+/* animaciones */
+
+article:hover .description {
+  display: block;
+}
+
+i.rotate {
+  transition: transform 5s;
+}
+
+article:hover i.rotate {
+  transform: rotate(360deg);
+}
+
+.deal-effect {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+article:hover .deal-effect {
+  transform: rotate(360deg);
 }
 
 /* TABLET */
@@ -190,3 +214,6 @@ div.img img {
     display: block;
   }
 }
+
+
+
