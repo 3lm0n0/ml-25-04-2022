@@ -108,7 +108,7 @@ div.img img {
     width: 100%;
 }
 .description {
-    display: none;
+    visibility: hidden;
     transition: transform 5s;
 
 }
@@ -154,7 +154,7 @@ div.img img {
 /* animaciones */
 
 article:hover .description {
-  display: block;
+  visibility: visible;
 }
 
 i.rotate {
